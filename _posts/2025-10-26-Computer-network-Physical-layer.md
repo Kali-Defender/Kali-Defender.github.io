@@ -3,7 +3,7 @@ layout: post
 title: "计算机网络物理层" 
 date: 2025-10-26 16:00:00 +0800 
 categories: 技术 计算机网络 
-tags: [network, learning] 
+tags: [network, learning，物理层] 
 author: Kali-Defender 
 ---
 # 一、物理层的基本概念
@@ -141,7 +141,7 @@ author: Kali-Defender
 
 
 
-### 🟦 奈氏准则（Nyquist Criterion）
+###  奈氏准则（Nyquist Criterion）
 
 > 在假定的理想条件下，为了避免码间串扰，码元传输速率是有上限的。
 
@@ -165,7 +165,7 @@ author: Kali-Defender
 
 
 
-### 🟧 香农公式（Shannon Formula）
+### 香农公式（Shannon Formula）
 
 > 描述了在带宽受限且存在高斯白噪声干扰的情况下，信道的极限信息传输速率。
 
@@ -180,13 +180,13 @@ C = W × log₂(1 + S/N)
 - S/N：信噪比，常用分贝（dB）表示：  
   信噪比(dB) = 10 × log₁₀(S/N)
 
-#### 🔍 结论：
+####  结论：
 - 信道带宽越大，或信噪比越高，信息的极限传输速率就越高。
 - 实际信道中由于脉冲干扰、衰减、失真等因素，实际速率通常低于香农公式计算值。
 
 
 
-### 💡 总结要点
+###  总结要点
 
 1. **提高传输速率的方法**：
    - 采用**多元制调制**，让每个码元携带多个比特；
