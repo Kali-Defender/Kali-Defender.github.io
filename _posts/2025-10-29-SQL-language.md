@@ -373,16 +373,28 @@ SELECT 字段列表 FROM 表名 LIMIT 起始索引, 查询记录数;
 ### 七、执行顺序与编写顺序
 
 #### 1、执行顺序
-```mermaid
-graph TD
-    A[FROM <br>表名列表] --> B[WHERE <br>条件列表]
-    B --> C[GROUP BY <br>分组字段列表]
-    C --> D[HAVING <br>分组后条件列表]
-    D --> E[SELECT <br>字段列表]
-    E --> F[ORDER BY <br>排序字段列表]
-    F --> G[LIMIT <br>分页参数]
-    G --> H[执行顺序]
-```
+
+
+
+顺序 子句 说明
+
+1 FROM 首先确定数据来源，即查询哪张表或哪些表。
+
+2 WHERE 对表中的原始数据进行条件过滤。
+
+3 GROUP BY 将过滤后的数据按照指定字段进行分组。
+
+4 HAVING 对分组后的结果集进行条件过滤。
+
+5 SELECT 选择要返回的字段或计算表达式。
+
+6 ORDER BY 对最终的结果集进行排序。
+
+7 LIMIT 对排序后的结果进行分页，限制返回的条数。
+
+
+
+
 
 #### 2、编写顺序
 ```mermaid
